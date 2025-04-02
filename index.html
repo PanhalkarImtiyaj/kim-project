@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navigation Bar</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="kim.png" alt="Company Logo" class="logo-img">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="auth-links">
+                    <a href="#" class="login-btn">Login</a>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                </li>
+            </ul>
+
+            <button class="hamburger">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="car-slider-container">    
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="car-slide active">
+                <img src="thar.avif" alt="Mahindra Thar" class="slide-image">
+                <div class="slide-content">
+                    <span class="car-badge">Adventure Ready</span>
+                    <h3>Mahindra Thar</h3>
+                    <div class="car-specs">
+                        <span><i class="ri-user-line"></i> 4 Seats</span>
+                        <span><i class="ri-dashboard-3-line"></i> Manual</span>
+                        <span><i class="ri-roadster-line"></i> 4x4</span>
+                        <span><i class="ri-gas-station-line"></i> Petrol</span>
+                    </div>
+                    <p class="car-description">
+                        The ultimate off-road companion with rugged design and unmatched terrain capability. Perfect for adventure seekers.
+                    </p>
+                    <div class="price-container">
+                        <div class="price">₹2,800<span>/day</span></div>
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="book-btn"><i class="ri-calendar-line"></i> Book Now</button>
+                        <button class="details-btn"><i class="ri-information-line"></i> Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="car-slide">
+                <img src="fortuner.webp" alt="fortunr" class="slide-image">
+                <div class="slide-content">
+                    <span class="car-badge">Luxury SUV</span>
+                    <h3>Toyota Fortuner</h3>
+                    <div class="car-specs">
+                        <span><i class="ri-user-line"></i> 5 Seats</span>
+                        <span><i class="ri-dashboard-3-line"></i> Automatic</span>
+                        <span><i class="ri-sun-foggy-line"></i> Sunroof No</span>
+                        <span><i class="ri-gas-station-line"></i> Diesel</span>
+                    </div>
+                    <p class="car-description">
+                        Premium SUV with sophisticated styling, advanced features, and commanding road presence for urban explorers.
+                    </p>
+                    <div class="price-container">
+                        <div class="price">₹3,200<span>/day</span></div>
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-line"></i>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="book-btn"><i class="ri-calendar-line"></i> Book Now</button>
+                        <button class="details-btn"><i class="ri-information-line"></i> Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation and Indicators -->
+            <button class="slider-nav prev-btn"><i class="ri-arrow-left-s-line"></i></button>
+            <button class="slider-nav next-btn"><i class="ri-arrow-right-s-line"></i></button>
+            
+            <div class="pagination-dots"></div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        
+        <div class="slider-features">
+            <div class="feature">
+                <i class="ri-shield-check-line"></i>
+                <span>Fully Insured</span>
+            </div>
+            <div class="feature">
+                <i class="ri-24-hours-line"></i>
+                <span>24/7 Support</span>
+            </div>
+            <div class="feature">
+                <i class="ri-map-pin-line"></i>
+                <span>Multiple Locations</span>
+            </div>
+            <div class="feature">
+                <i class="ri-leaf-line"></i>
+                <span>Eco-Friendly</span>
+            </div>
+        </div>
+    </div>
+
+     <!-- Add these sections below your existing content -->
+    
+    <!-- Vehicle Showcase Section -->
+    <section class="vehicle-showcase">
+        <div class="section-header">
+            <h2>Our Premium Fleet</h2>
+            <p>Choose from our selection of luxury, economy, and family vehicles to suit your travel needs</p>
+        </div>
+        <div class="vehicle-grid">
+            <div class="vehicle-card">
+                <img src="verna.webp" alt="Sports Car" class="vehicle-image">
+                <div class="vehicle-details">
+                    <div class="vehicle-make">hundai</div>
+                    <h3 class="vehicle-model">verna</h3>
+                    <div class="vehicle-specs">
+                        <span class="vehicle-spec"><i class="fas fa-user"></i> 5 seats</span>
+                        <span class="vehicle-spec"><i class="fas fa-tachometer-alt"></i> 8.2L/100km</span>
+                        <span class="vehicle-spec"><i class="fas fa-car"></i> Automatic</span>
+                    </div>
+                    <div class="vehicle-price">₹3,200<span>/day</span></div>
+                    <a href="#" class="rent-btn">Rent Now</a>
+                </div>
+            </div>
+            
+            <div class="vehicle-card">
+                <img src="scorpio.avif" alt="Scorpio N" class="vehicle-image">
+                <div class="vehicle-details">
+                    <div class="vehicle-make">Mahindra</div>
+                    <h3 class="vehicle-model">Scorpio N</h3>
+                    <div class="vehicle-specs">
+                        <span class="vehicle-spec"><i class="fas fa-user"></i> 5 seats</span>
+                        <span class="vehicle-spec"><i class="fas fa-tachometer-alt"></i> 9.5L/100km</span>
+                        <span class="vehicle-spec"><i class="fas fa-car"></i> Automatic</span>
+                    </div>
+                    <div class="vehicle-price">₹3,200<span>/day</span></div>
+                    <a href="#" class="rent-btn">Rent Now</a>
+                </div>
+            </div>
+            
+            <div class="vehicle-card">
+                <img src="innova.avif" alt="Family Car" class="vehicle-image">
+                <div class="vehicle-details">
+                    <div class="vehicle-make">TOYOTA</div>
+                    <h3 class="vehicle-model">Toyota Innova Crysta</h3>
+                    <div class="vehicle-specs">
+                        <span class="vehicle-spec"><i class="fas fa-user"></i> 8 seats</span>
+                        <span class="vehicle-spec"><i class="fas fa-tachometer-alt"></i> 4.1L/100km</span>
+                        <span class="vehicle-spec"><i class="fas fa-car"></i> Automatic</span>
+                    </div>
+                    <div class="vehicle-price">₹3,200<span>/day</span></div>
+                    <a href="#" class="rent-btn">Rent Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="benefits-section">
+        <div class="section-header">
+            <h2>Why Choose Our Car Rental</h2>
+            <p>We go the extra mile to make your rental experience seamless and enjoyable</p>
+        </div>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>24/7 Availability</h3>
+                <p>Our services are available round the clock with emergency support whenever you need it on the road.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>No Hidden Fees</h3>
+                <p>Transparent pricing with all taxes included. What you see is what you pay, no surprises.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Multiple Locations</h3>
+                <p>Pick up and drop off at any of our convenient locations across major cities and airports.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rental Process Section -->
+    <section class="process-section">
+        <div class="section-header">
+            <h2>Simple Rental Process</h2>
+            <p>Get behind the wheel in just a few easy steps</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Choose Your Vehicle</h3>
+                    <p>Browse our extensive fleet and select the perfect vehicle for your needs, whether it's a compact car for city driving or an SUV for family trips.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Make Reservation</h3>
+                    <p>Book online in minutes or call our friendly staff. We'll confirm your reservation instantly with all the details you need.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Pick Up & Drive</h3>
+                    <p>Visit our location with your driver's license and credit card. We'll get you on the road quickly after a quick vehicle orientation.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Return & Relax</h3>
+                    <p>Return the vehicle at your convenience. We'll handle everything else and provide a detailed receipt of your rental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    <!-- Indian Cities Section -->
+    <section class="indian-cities">
+        <div class="section-header">
+            <h2>Rent Cars Across India</h2>
+            <p>Available in all major Indian cities with 24/7 support</p>
+        </div>
+        <div class="city-buttons">
+            <div class="city-btn">Delhi NCR</div>
+            <div class="city-btn">Mumbai</div>
+            <div class="city-btn">Bangalore</div>
+            <div class="city-btn">Hyderabad</div>
+            <div class="city-btn">Chennai</div>
+            <div class="city-btn">Kolkata</div>
+            <div class="city-btn">Pune</div>
+            <div class="city-btn">Ahmedabad</div>
+            <div class="city-btn">Jaipur</div>
+            <div class="city-btn">Goa</div>
+        </div>
+    </section>
+    
+    <!-- Indian Festival Special -->
+    <section class="vehicle-showcase">
+        <div class="festival-special">
+            <div class="festival-badge">Diwali Special</div>
+            <div class="festival-content">
+                <h2 style="color:white;margin-bottom:1rem;">Diwali Dhamaka Offer!</h2>
+                <p style="font-size:1.2rem;margin-bottom:1.5rem;">Get 15% off on all rentals during the festival season. Use code: <strong>DIWALI2023</strong></p>
+                <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                    <div style="background:rgba(255,255,255,0.2); padding:1rem; border-radius:8px;">
+                        <div>🚗 Free Upgrade</div>
+                        <small>On bookings above 5 days</small>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.2); padding:1rem; border-radius:8px;">
+                        <div>🛣️ Unlimited KMs</div>
+                        <small>On outstation trips</small>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.2); padding:1rem; border-radius:8px;">
+                        <div>🧑‍✈️ Free Driver</div>
+                        <small>For first 100 bookings</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Indian Rental Requirements Section -->
+    <section class="benefits-section">
+        <div class="section-header">
+            <h2>Indian Rental Requirements</h2>
+            <p>What you need to rent a car in India</p>
+        </div>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3>Valid Driving License</h3>
+                <p>Indian license or International Driving Permit (IDP) with valid passport and visa for foreigners.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3>Security Deposit</h3>
+                <p>Refundable deposit required (varies by vehicle type). Acceptable via credit card or cash.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <h3>ID Proof</h3>
+                <p>PAN card or Aadhaar card for Indian nationals, passport for foreign nationals.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer" data-animate="fade-up">
+        <div class="footer-container">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="your-logo.png" alt="DriveIndia Car Rentals" class="footer-logo">
+                    <p class="footer-tagline">India's Most Trusted Car Rental Service</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Our Fleet</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Special Offers</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul>
+                            <li><a href="#">Self Drive</a></li>
+                            <li><a href="#">Chauffeur Service</a></li>
+                            <li><a href="#">Outstation Trips</a></li>
+                            <li><a href="#">Airport Transfers</a></li>
+                            <li><a href="#">Corporate Rentals</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Support</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 MG Road, Bangalore, India - 560001</li>
+                            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@driveindia.com">info@driveindia.com</a></li>
+                            <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Middle - Indian Payment Options -->
+            <div class="footer-middle" data-animate="fade-up">
+                <h4 class="payment-title">We Accept:</h4>
+                <div class="payment-methods">
+                    <img src="https://via.placeholder.com/50x30?text=UPI" alt="UPI" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=PayTM" alt="PayTM" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=PhonePe" alt="PhonePe" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=Visa" alt="Visa" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=Mastercard" alt="Mastercard" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=Rupay" alt="Rupay" loading="lazy">
+                    <img src="https://via.placeholder.com/50x30?text=NetBanking" alt="NetBanking" loading="lazy">
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="footer-bottom" data-animate="fade-up">
+                <div class="copyright">
+                    &copy; 2023 DriveIndia Car Rentals. All Rights Reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> 100% Secure Payments</span>
+                    <span class="badge"><i class="fas fa-leaf"></i> Environment Friendly</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="home.js"></script>
+</body>
+</html>
